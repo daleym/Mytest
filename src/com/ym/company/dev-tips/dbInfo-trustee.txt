@@ -1,0 +1,98 @@
+【===卡订单表===】  START 
+# 主键                          trans_id 交易ID   
+# 联合唯一索引：        user_id(用户ID) 、channel（渠道）
+# t0_flag       提现方式 （ 0-普通提现 T+1  , 1-普通提现 T+0 , 2-委托提现 T+1 , 3-委托提现 T+0 ）
+# 分表规则                    uid 100
+select * from trustee.t_trustee_card_order_046 where 1=1
+and user_id = 5446
+and channel =1   #1-富友  
+and state in ('1','3')  #1-验证通过，3-审核中
+【===卡订单表===】  END 
+
+
+【===卡流水表===】 START
+#  主键                        flow_id 流水ID
+# 分表规则                    uid 100
+select * from trustee.t_trustee_card_flow_000 where 1=1
+【===卡流水表===】 END
+
+【请求订单表】 START
+#  主键                         order_id 订单号
+# state         0-初始化  ;   1-成功;   2-失败;   3-处理中
+#remark         设置用户提现模式
+#type           平台业务类型    52-设置提现模式
+#channel_type   通道业务类型    16-设置提现模式  
+#分表规则                       uid 100 
+select * from trustee.t_trustee_request_order_086 where 1=1
+and user_id = 201609010017321186
+and order_id = 1478195635349086
+and channel = 1  #富友-1
+and type = 2 #提现-2
+【请求订单表】 END
+
+
+
+【===请求流水表===】 START
+#主键                              flow_id 流水ID
+#type           平台业务类型    52-设置提现模式
+#channel_type   通道业务类型    16-设置提现模式
+#分表规则                       uid   100
+select * from trustee.t_trustee_request_flow_000 where 1=1
+and trans_id =   
+and type = 52    
+and channel = 1   #1-富友 
+【===请求流水表===】 END
+#注意：请求订单表、请求流水表的公共字段：order_id、trans_id、user_id
+
+#################【====充值订单表===】start################
+#主键                   order_id              订单ID
+#联合唯一索引    trans_id、bus_type    交易ID、业务类型
+#分表规则        user_id  % 100        保留3位
+SELECT * from trustee.t_trustee_recharge_order_086 where 1=1
+
+#################【====充值订单表===】end################
+
+##################【充值流水表】 START #######################
+#主键            flow_id               流水ID
+#分表规则        user_id  % 100        保留3位
+select * from trustee.t_trustee_recharge_flow_086 where 1=1
+
+##################【充值流水表】 END #######################
+
+##################【提现订单表】 START #######################
+#主键                   order_id              订单ID
+#联合唯一索引    trans_id、bus_type    交易ID、业务类型
+#分表规则        user_id  % 100        保留3位
+select * from trustee.t_trustee_withdraw_order_086 where 1=1
+and user_id = 201609010017321186
+and order_id = 1478195635349086
+and channel = 1  #富友-1
+##################【提现订单表】 END #######################
+
+##################【提现流水表】 START #######################
+#主键              flow_id               流水ID
+#分表规则        user_id  % 100        保留3位
+select * from trustee.t_trustee_withdraw_flow_000;
+##################【提现流水表】 END #######################
+
+#【===用户id与IDCARD关系映射表===】start   
+#联合主键        id_card_type  证件类型  、 id_card_no 证件号
+#attention       用于检验 身份证件是否已在用户名下
+select * from `user`.t_userid_idcard_rel_009  t where 1=1
+and  t.id_card_type = 
+and t.id_card_no = 
+and t.status = 
+#【===用户id与IDCARD关系映射表===】end
+
+#【===PC端网银-银行管理表===】start
+#主键：        id
+#唯一性索引    bank_code 银行编号
+select * from trustee.t_bank  
+#【===PC端网银-银行管理表===】end
+
+#【###错误码描述关系表###】start
+#主键   id(自动递增)
+select * from trustee.t_err_code where 1=1
+#and err_code='5019'
+and msg_show like '%目标机构%'
+#【###错误码描述关系表###】end

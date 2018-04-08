@@ -1,0 +1,21 @@
+#【用户账户表】
+#联合唯一索引     type     账户类型（如2-富友）    、   uid  用户ID  
+#主键                    acc_id   账户ID(IDApp生成)
+#分表规则             uid->acc_id
+SELECT * from account.t_user_account_38 where 1=1
+and uid=243785486003000138
+and state = 0 #0-普通
+and type = 2; #  2-富友
+
+
+
+#【用户账户流水表】
+#operation     7-开户
+#is_show       1-不展示
+#remark        create account
+#bus_type      业务类型      7 - CREATE  
+#trans_id      交易ID(取自卡订单表的trans_id)
+#联合唯一索引  bus_type 、operation、trans_id
+#主键          flow_id    IDApp生成（规则和acc_id一致）
+#分表规则      uid
+select * from account.t_user_account_flow_31 where flow_id = 20171012000000131;
