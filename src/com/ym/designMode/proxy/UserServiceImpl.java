@@ -8,6 +8,11 @@ public class UserServiceImpl implements UserService {
 	@Override
     public void add(String content) {  
         System.out.println("--------------------add---------------" + content);  
-    }  
+    }
+
+	@Override
+	public void addSpecial(String content) {
+		System.out.println("--------------------add---------------" + content);
+	}  
 
 }

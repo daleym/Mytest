@@ -23,7 +23,14 @@ public class MyInvocationHandler implements InvocationHandler {
      * 执行目标对象的方法 
      */  
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {  
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+    	String methodName = method.getName();
+    	System.out.println(String.format("method【%s】", methodName));
+    	if("addSpecial".equals(methodName)){
+    		System.out.println("执行特殊的方法...");
+    		method.invoke(target, args);
+    		return null;
+    	}
           
         // 在目标对象的方法执行之前简单的打印一下  
         System.out.println("------------------before------------------");  

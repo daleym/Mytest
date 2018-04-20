@@ -19,6 +19,7 @@ public class ProxyTest {
           
         // 调用代理对象的方法  
         proxy.add("世界");  
+        proxy.addSpecial("特殊的方法");
           
     }
     
