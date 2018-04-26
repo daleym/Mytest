@@ -5,7 +5,7 @@ package com.ym.designMode.adaptor;
  * @author Administrator
  *
  */
-public class AdaptorDemo extends DemoAbstract {
+public class AdaptorTest extends DemoAbstract {
 
 	@Override
 	public void push(){
@@ -13,7 +13,7 @@ public class AdaptorDemo extends DemoAbstract {
 	}
 	
 	public static void main(String[] args) {
-		DemoInterface demoInterface =  new AdaptorDemo();
+		DemoInterface demoInterface =  new AdaptorTest();
 		demoInterface.push();
 	}
 	
