@@ -1,4 +1,4 @@
-package com.ym.thread.waitnotify;
+package com.ym.thread.threadNew.waitnotify;
 
 import java.util.LinkedList;
 import java.util.Queue;

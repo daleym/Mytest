@@ -1,4 +1,4 @@
-package com.ym.thread.connWithThread;
+package com.ym.thread.threadNew.connWithThread;
 
 import java.io.IOException;
 import java.io.PipedInputStream;

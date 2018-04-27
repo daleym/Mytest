@@ -1,4 +1,4 @@
-package com.ym.thread.connWithThread;
+package com.ym.thread.threadNew.connWithThread;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

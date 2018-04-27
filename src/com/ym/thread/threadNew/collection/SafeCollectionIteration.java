@@ -1,4 +1,4 @@
-package com.ym.thread.collection;
+package com.ym.thread.threadNew.collection;
 
 import java.util.ArrayList;
 import java.util.Collections;

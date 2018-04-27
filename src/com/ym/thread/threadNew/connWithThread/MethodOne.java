@@ -1,4 +1,4 @@
-package com.ym.thread.connWithThread;
+package com.ym.thread.threadNew.connWithThread;
 
 /**
  * 线程通信之 wait、notify

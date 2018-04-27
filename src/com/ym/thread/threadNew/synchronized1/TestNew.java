@@ -1,4 +1,4 @@
-package com.ym.thread.synchronized1;
+package com.ym.thread.threadNew.synchronized1;
 
 /**
  * ReentrantLock支持中断,synchronized不支持中断

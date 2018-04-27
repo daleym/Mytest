@@ -1,4 +1,4 @@
-package com.ym.thread.synchronized1;
+package com.ym.thread.threadNew.synchronized1;
 
 public class WriterNew extends Thread{
 

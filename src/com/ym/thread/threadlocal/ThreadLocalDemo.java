@@ -1,4 +1,4 @@
-package com.ym.thread.threadlocal;
+package com.ym.thread.threadLocal;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

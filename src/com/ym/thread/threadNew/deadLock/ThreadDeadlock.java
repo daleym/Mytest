@@ -1,4 +1,4 @@
-package com.ym.thread.deadLock;
+package com.ym.thread.threadNew.deadLock;
 
 public class ThreadDeadlock {
 

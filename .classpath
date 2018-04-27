@@ -9,5 +9,17 @@
 	<classpathentry kind="lib" path="lib/mariadb-java-client-1.5.0-RC1.jar"/>
 	<classpathentry kind="lib" path="lib/junit-4.12-sources.jar"/>
 	<classpathentry kind="lib" path="lib/junit-4.12.jar" sourcepath="E:/ZYXR/tec/buss-team/my-git-workspace/MyTest/lib/junit-4.12-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-webmvc-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-webmvc-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/spring-web-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-web-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-servlet-api-7.0.70-sources.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-servlet-api-7.0.70.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-4.3.2.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
