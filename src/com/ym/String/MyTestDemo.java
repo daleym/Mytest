@@ -9,6 +9,11 @@ public class MyTestDemo {
 		System.out.println("格式化为2位十进制整数："+  String.format("%02d", Long.valueOf(dateStr)%100));
 		
 		System.out.println(String.format("%sdubbo", "日志插入！"));
+		
+		String a1 = "String";
+		String a2 = "String";
+		System.out.println(a1.equals(a2));
+		System.out.println(a1 == a2);
 	}
 	
 }

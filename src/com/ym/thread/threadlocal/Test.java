@@ -1,4 +1,4 @@
-package com.ym.thread.threadLocal;
+package com.ym.thread.threadlocal;
 
 public class Test {
 
