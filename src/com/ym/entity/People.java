@@ -4,12 +4,17 @@ import com.ym.compare.User;
 
 public class People {
 	
-	private Double height;
-	private Double weight;
+	public Double height;
+	public Double weight;
 	
 	public People(){
 		height = 1.70D;
 		weight = 130D;
+	}
+	
+	public People(Double height , Double weight){
+		this.height = height;
+		this.weight = weight;
 	}
 	
 	@Override
