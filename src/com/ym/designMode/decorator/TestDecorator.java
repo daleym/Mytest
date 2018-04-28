@@ -5,7 +5,7 @@ package com.ym.designMode.decorator;
  * @author Administrator
  *
  */
-public class DecoratorDemo {
+public class TestDecorator {
 
 	public static void main(String[] args) {
 		GuoDi  guodi = new YuanYang() ;//点个大龙燚火锅原味锅底

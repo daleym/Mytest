@@ -1,4 +1,4 @@
-package com.ym.springIntercepter;
+package com.ym.spring.interceptor;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

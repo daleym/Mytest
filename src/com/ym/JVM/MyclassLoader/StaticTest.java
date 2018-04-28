@@ -20,7 +20,7 @@ public class StaticTest {
 	
 	static StaticTest st = new StaticTest();
 	 
-    
+	final static int b =112;
  
     
     
@@ -31,6 +31,7 @@ public class StaticTest {
     static
     {
         System.out.println("1");
+        System.out.println("b=" + b);
     }
     
     public StaticTest()
@@ -50,6 +51,6 @@ public class StaticTest {
     }
 	
 	int a=110;
-    static int b =112;
+    
 	
 }

@@ -5,15 +5,16 @@ package com.ym.designMode.adaptor;
  * @author Administrator
  *
  */
-public class AdaptorTest extends DemoAbstract {
-
+public class TestAdaptor extends DemoAbstract {
+	public int j  = 9;
+	
 	@Override
 	public void push(){
-		System.out.println("推送代码到git......");
+		System.out.println(String.format("推送代码到git......i[%s],j[%s]", i , j));
 	}
 	
 	public static void main(String[] args) {
-		DemoInterface demoInterface =  new AdaptorTest();
+		DemoInterface demoInterface =  new TestAdaptor();
 		demoInterface.push();
 	}
 	

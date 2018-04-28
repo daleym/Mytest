@@ -1,7 +1,0 @@
-【===用户表===】 START
-#  主键         id  用户ID
-#  唯一索引1：  user_name（用户名称 ） 
-#  唯一索引2：  mobile（手机号）
-select * from `user`.t_user_046 where 1=1
-and id = 5446
-【===用户表===】 END

@@ -1,4 +1,4 @@
-package com.ym.springIntercepter;
+package com.ym.spring.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 

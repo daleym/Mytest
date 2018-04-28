@@ -6,7 +6,7 @@ package com.ym.JVM;
  * @author Administrator
  *
  */
-public class TestDemo {
+public class TestDynamicAndStaticBinding {
 	public static void main(String[] args) {
 		Father father = new Son();
 		System.out.println(father.getName());
