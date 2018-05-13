@@ -18,8 +18,17 @@
 	<classpathentry kind="lib" path="lib/spring-web-4.3.2.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="lib/spring-web-4.3.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/tomcat-servlet-api-7.0.70-sources.jar"/>
-	<classpathentry kind="lib" path="lib/tomcat-servlet-api-7.0.70.jar"/>
+	<classpathentry kind="lib" path="lib/tomcat-servlet-api-7.0.70.jar" sourcepath="F:/my_git_workspace/Mytest20180428/lib/tomcat-servlet-api-7.0.70-sources.jar"/>
 	<classpathentry kind="lib" path="lib/spring-beans-4.3.2.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="lib/spring-beans-4.3.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/jedis-2.6.1.jar" sourcepath="F:/my_git_workspace/Mytest20180428/lib/jedis-2.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/curator-client-2.5.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/curator-client-2.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/curator-framework-3.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/curator-framework-3.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/curator-recipes-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/curator-recipes-2.9.1.jar" sourcepath="F:/my_git_workspace/Mytest20180428/lib/curator-recipes-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/zookeeper-3.4.12-sources.jar"/>
+	<classpathentry kind="lib" path="lib/zookeeper-3.4.12.jar" sourcepath="F:/my_git_workspace/Mytest20180428/lib/zookeeper-3.4.12-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
