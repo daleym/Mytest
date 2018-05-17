@@ -14,7 +14,7 @@ public class Test {
             public void run() {
                 DistributedLock lock = null;
                 try {
-                    lock = new DistributedLock("127.0.0.1:2181", "test1");
+                    lock = new DistributedLock("192.168.9.115:2181", "test1");
                     lock.lock();
                     secskill();
                     System.out.println(Thread.currentThread().getName() + "正在运行");

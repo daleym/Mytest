@@ -12,7 +12,8 @@
 	###http://192.168.9.156:8080/fuyou/jzh/（签名挡板）
 		 http://192.168.9.108:8080/fuyou/jzh/
 	###最新测试地址
-	http://cg.zjcgxt.com/jzh/
+	http://cg.zjcgxt.com/jzh/  测试环境的
+	https://hrcg1.shrbank.com/ 线上的
 	
 4.操作入口
 	a.企业开户：后台管理系统 / 合作机构管理 / 添加合作机构      addCooperation

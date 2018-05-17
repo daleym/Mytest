@@ -1,5 +1,10 @@
 package com.ym.designMode.decorator;
 
+/**
+ * ³éÏó×°ÊÎÕß
+ * @author Administrator
+ *
+ */
 public abstract class PeiCai implements GuoDi {
     private GuoDi guodi;
     public PeiCai(GuoDi guodi) {

@@ -1,7 +1,9 @@
 package com.ym.designMode.decorator;
 
 /**
- * 裝飾者模式：对外部调用者无感知，临时增加了一些功能
+ * 裝飾者模式应用：对外部调用者无感知，临时增加了一些功能
+ * 四个要素：被装饰目标对象GuoDi、被装饰目标对象实现类YuanYang、装饰者（抽象类）GuoDi、装饰者子类MaLaNiuRou
+ * eg:装饰者实现了被装饰目标对象接口，并且组合或聚合了被装饰接口。动态的扩展实现的内容！！！
  * @author Administrator
  *
  */

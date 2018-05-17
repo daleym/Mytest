@@ -1,5 +1,10 @@
 package com.ym.designMode.decorator;
 
+/**
+ * 抽象装饰者 的 子类
+ * @author Administrator
+ *
+ */
 public class MaoDu extends PeiCai {
 
     public MaoDu(GuoDi guodi) {

@@ -1,6 +1,9 @@
 package com.ym.switch_;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @description swith...caseœÍΩ‚
@@ -31,14 +34,22 @@ public class TestSwitchCase {
 	}
 	
 	public static void main(String[] args) {
-		executeSwitchCaseBlock(Fruit.APPLE);
-		executeSwitchCaseBlock(Fruit.BANANA);
-		executeSwitchCaseBlock(Fruit.WATERMELON);
+//		executeSwitchCaseBlock(Fruit.APPLE);
+//		executeSwitchCaseBlock(Fruit.BANANA);
+//		executeSwitchCaseBlock(Fruit.WATERMELON);
+//		
+//		executeSwitchCaseBlock(Fruit.PEAR);
+//		executeSwitchCaseBlock(Fruit.ORANGE);
+//		executeSwitchCaseBlock(Fruit.DURIAN);
+//		executeSwitchCaseBlock(Fruit.GRAPE);
 		
-		executeSwitchCaseBlock(Fruit.PEAR);
-		executeSwitchCaseBlock(Fruit.ORANGE);
-		executeSwitchCaseBlock(Fruit.DURIAN);
-		executeSwitchCaseBlock(Fruit.GRAPE);
+		List<Fruit> fruits = new LinkedList<>();
+		fruits.add(Fruit.PEAR);
+		fruits.add(Fruit.BANANA);
+		
+		for(Fruit f : fruits){
+			executeSwitchCaseBlock(f);
+		}
 	}
 	
 }

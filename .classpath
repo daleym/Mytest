@@ -29,6 +29,6 @@
 	<classpathentry kind="lib" path="lib/curator-recipes-2.9.1-sources.jar"/>
 	<classpathentry kind="lib" path="lib/curator-recipes-2.9.1.jar" sourcepath="F:/my_git_workspace/Mytest20180428/lib/curator-recipes-2.9.1-sources.jar"/>
 	<classpathentry kind="lib" path="lib/zookeeper-3.4.12-sources.jar"/>
-	<classpathentry kind="lib" path="lib/zookeeper-3.4.12.jar" sourcepath="F:/my_git_workspace/Mytest20180428/lib/zookeeper-3.4.12-sources.jar"/>
+	<classpathentry kind="lib" path="lib/zookeeper-3.4.12.jar" sourcepath="E:/ZYXR/tec/buss-team/my-git-workspace/Mytest/lib/zookeeper-3.4.12-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

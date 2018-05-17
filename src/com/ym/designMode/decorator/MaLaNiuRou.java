@@ -1,5 +1,10 @@
 package com.ym.designMode.decorator;
 
+/**
+ * 抽象装饰者的子类
+ * @author Administrator
+ *
+ */
 public class MaLaNiuRou extends PeiCai {
     public MaLaNiuRou(GuoDi guodi) {
         super(guodi);
