@@ -1,4 +1,4 @@
-package com.ym.list;
+package com.ym.collection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,12 @@ public class ArrayListDemo {
 		list2.set(0 , "1" );
 		list2.set(0,  "2");
 		System.out.println(list2);
+		
+		List<String > list3 = new ArrayList<>();
+		list3.add("dale");
+		list3.add("lily");
+		list3.add("lily");
+		System.out.println(list3);
 	}
 	
 }
