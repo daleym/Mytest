@@ -1,4 +1,4 @@
-package com.ym.thread.synchronizednew;
+package com.ym.thread.synchronize;
 
 /**
  * »¥³âËø:synchronized

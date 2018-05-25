@@ -1,12 +1,12 @@
-package com.ym.thread.threadNew.synchronized1;
+package com.ym.thread.synchronize;
 
-public class Reader  extends Thread{
+public class ReaderThread  extends Thread{
 
 	private Buffer buff;   
 	
 	 
 	
-	    public Reader(Buffer buff) {
+	    public ReaderThread(Buffer buff) {
 	
 	        this.buff = buff;
 	

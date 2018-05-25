@@ -1,12 +1,15 @@
-package com.ym.thread.threadNew.synchronized1;
+package com.ym.thread.synchronize;
 
 /**
- * ReentrantLock支持中断,synchronized不支持中断
- * eg:lock.lockInterruptibly();reader.interrupt();
+ * ReentrantLock的中断特性：
+ * 					相比synchronized，其支持中断
+ * eg:当写线程WriterByReentrantLockThread一直在独占锁运行时（lock.lock），
+ *          那么读线程ReaderByReentrantLockThread通过加锁后（lock.lockInterruptibly()），
+ * 			可以接受中断指令(new Thread(XXX).interrupt())停止等待并结束运行！
  * @author Administrator
  *
  */
-public class TestNew {
+public class TestReentrantLockInterrupt {
 
 	public static void main(String[] args) {
 		
@@ -14,9 +17,9 @@ public class TestNew {
 		
 		 
 		
-		        final WriterNew writer = new WriterNew(buff);
+		        final WriterByReentrantLockThread writer = new WriterByReentrantLockThread(buff);
 		
-		        final ReaderNew reader = new ReaderNew(buff);   
+		        final ReaderByReentrantLockThread reader = new ReaderByReentrantLockThread(buff);   
 		
 		 
 		

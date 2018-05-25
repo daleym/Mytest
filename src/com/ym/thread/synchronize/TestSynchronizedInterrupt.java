@@ -1,12 +1,13 @@
-package com.ym.thread.threadNew.synchronized1;
+package com.ym.thread.synchronize;
 
 /**
- * * ReentrantLock支持中断,synchronized不支持中断
- * eg:lock.lockInterruptibly();reader.interrupt();
+ * synchronized中断方面特性（new Thread(XXX).interupt()）：
+ *     总结：不支持中断。当ReaderThread写线程持续运行时，读线程ReaderThread尝试中断时会不起作用
+ *     eg:由于synchronized不支持中断，导致ReaderThread写线程持续运行占用锁（Buffer实例），
+ *     读线程ReaderThread一直阻塞...
  * @author Administrator
- *
  */
-public class Test {
+public class TestSynchronizedInterrupt {
 
 	public static void main(String[] args) {
 		
@@ -14,9 +15,9 @@ public class Test {
 		
 		 
 		
-		        final Writer writer = new Writer(buff);
+		        final WriterThread writer = new WriterThread(buff);
 		
-		        final Reader reader = new Reader(buff);   
+		        final ReaderThread reader = new ReaderThread(buff);   
 		
 		 
 		

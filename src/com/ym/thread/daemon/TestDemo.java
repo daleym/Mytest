@@ -3,7 +3,7 @@ package com.ym.thread.daemon;
 /**
  * 守护线程应用
  * 			设置守护线程：setDaemon(true)
- *          特性：子线程若先执行完，则JVM会停止，守护线程便会失效！！！
+ *          特性：子线程若先执行完，则JVM会退出，守护线程便会失效！！！
  *          eg:子线程和守护线程同时往daemon.txt追加数据，若守护线程在子线程前或同时执行完，那么会追加数据成功，否则追加失败！
  * @author Administrator
  *

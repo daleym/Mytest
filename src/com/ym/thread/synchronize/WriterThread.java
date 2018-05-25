@@ -1,12 +1,12 @@
-package com.ym.thread.threadNew.synchronized1;
+package com.ym.thread.synchronize;
 
-public class Writer  extends Thread{
+public class WriterThread  extends Thread{
 
 	private Buffer buff;   
 	
 	 
 	
-	    public Writer(Buffer buff) {
+	    public WriterThread(Buffer buff) {
 	
 	        this.buff = buff;
 	

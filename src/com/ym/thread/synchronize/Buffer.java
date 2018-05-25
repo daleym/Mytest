@@ -1,4 +1,4 @@
-package com.ym.thread.threadNew.synchronized1;
+package com.ym.thread.synchronize;
 
 public class Buffer {
 
