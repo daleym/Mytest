@@ -4,13 +4,13 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 线程中断的应用：
- *			特性：只能中断阻塞中的线程(如sleep),若 this.interrupt()时，
+ *			特性：如下只能中断阻塞中的线程(如sleep),若 this.interrupt()时，
  *				需要捕获异常InterruptException,这时就会使中断状态复位(达到非中断状态)
- *			eg：	Thread t1在睡眠阻塞时，通过this.interrupt中断，即可停止	
+ *			eg：	Thread t1在睡眠阻塞时，通过this.interrupt中断，会使中断状态复位
  * @author Administrator
  *
  */
-public class TestInterruputSleepThread3 {
+public class TestInterruputThreadDemo2 {
 
 	public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread() {
@@ -26,7 +26,7 @@ public class TestInterruputSleepThread3 {
                     System.out.println("Interruted When Sleep");
                     boolean interrupt = this.isInterrupted();
                     //中断状态被复位
-                    System.out.println("interrupt:"+interrupt);
+                    System.out.println("中断状态interrupt:"+interrupt);
                 }
             }
         };

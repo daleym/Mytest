@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  * @author Administrator
  *
  */
-public class InterruputThread {
+public class TestInterruputThreadDemo1 {
 
 	public static void main(String[] args) throws InterruptedException {
         Thread t1=new Thread(){
@@ -24,7 +24,7 @@ public class InterruputThread {
                     }
                 }
 
-                System.out.println("已跳出循环,线程中断!");
+                System.out.println(String.format("已跳出循环,线程中断!其中线程中断状态【%s】", this.isInterrupted()));
             }
         };
         t1.start();

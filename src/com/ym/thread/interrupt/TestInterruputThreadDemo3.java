@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  * @author Administrator
  *
  */
-public class TestInterruputThread {
+public class TestInterruputThreadDemo3 {
 
 	public static void main(String[] args) throws InterruptedException {
         Thread t1=new Thread(){
