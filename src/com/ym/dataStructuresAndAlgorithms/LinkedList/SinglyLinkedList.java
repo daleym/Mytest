@@ -1,4 +1,4 @@
-package com.ym.dataStructuresAndAlgorithms;
+package com.ym.dataStructuresAndAlgorithms.LinkedList;
 
 /**
  * 1）单链表的插入、删除、查找操作；
