@@ -22,6 +22,29 @@ package com.ym.dataStructuresAndAlgorithms.LinkedList;
 *			一边继续向前移动一边计数，当再次回到这个结点时就可以得到环中结点数了。
 * 完成日期：2016-10-13
 ***************************************************************/ 
+
+public class CircleLinkedList {
+	public static void main(String[] args){
+		ListNode n1 = new ListNode(1);
+		ListNode n2 = new ListNode(2);
+		ListNode n3 = new ListNode(3);
+		ListNode n4 = new ListNode(4);
+		ListNode n5 = new ListNode(5);
+		ListNode n6 = new ListNode(6);
+		
+		n1.next = n2;
+		n2.next = n3;
+		n3.next = n4;
+		n4.next = n5;
+		n5.next = n6;
+		n6.next = n3;
+		 
+		SolutionMethod1 solution1 = new SolutionMethod1();
+		System.out.println("链表中环的入口节点是：" + solution1.EntryFunction(n1));
+		
+		System.out.println();
+	}
+}
  
 	/*
 	定义一个节点
@@ -118,25 +141,4 @@ class SolutionMethod1{
 }
 
 
-public class CircleLinkedList {
-	public static void main(String[] args){
-		ListNode n1 = new ListNode(1);
-		ListNode n2 = new ListNode(2);
-		ListNode n3 = new ListNode(3);
-		ListNode n4 = new ListNode(4);
-		ListNode n5 = new ListNode(5);
-		ListNode n6 = new ListNode(6);
-		
-		n1.next = n2;
-		n2.next = n3;
-		n3.next = n4;
-		n4.next = n5;
-		n5.next = n6;
-		n6.next = n3;
-		 
-		SolutionMethod1 solution1 = new SolutionMethod1();
-		System.out.println("链表中环的入口节点是：" + solution1.EntryFunction(n1));
-		
-		System.out.println();
-	}
-}
+
