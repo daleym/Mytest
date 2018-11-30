@@ -13,7 +13,7 @@ import java.math.RoundingMode;
  *             						   ---用法：向下取整，保留位不变，<= 原值
  									   ---eg:  12300 -> 123.0 ; 12345 -> 123.4 ; 12344 -> 123.4 ;12346->123.4
  *                                     b.RoundingMode.up.ordinal(Bigdecimal.round_up)     
- *                                     ---用法：向下取整，保留位进位，>= 原值
+ *                                     ---用法：向上取整，保留位进位，>= 原值
  *                                     ---eg:  12300 -> 123.0 ; 12345 -> 123.5 ; 12344 -> 123.5 ;12346->123.5
  *                                     c.RoundingMode.HALF_DOWN.ordinal（Bigdecimal.Round_half_down）
  *                                     ---用法： 五舍六入
