@@ -32,5 +32,7 @@
 	<classpathentry kind="lib" path="lib/zookeeper-3.4.12.jar" sourcepath="E:/ZYXR/tec/buss-team/my-git-workspace/Mytest/lib/zookeeper-3.4.12-sources.jar"/>
 	<classpathentry kind="lib" path="lib/gson-2.7-sources.jar"/>
 	<classpathentry kind="lib" path="lib/gson-2.7.jar"/>
+	<classpathentry kind="lib" path="lib/jbcrypt-0.4-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jbcrypt-0.4.jar" sourcepath="lib/jbcrypt-0.4-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
