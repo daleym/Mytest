@@ -2,7 +2,12 @@ package com.ym.jenkins;
 
 import org.mindrot.jbcrypt.BCrypt;
 
-public class Test {
+/**
+ * @des  jenkinsÃÜÂë¼ÓÃÜ £¨BCryptËã·¨£©
+ * @author Administrator
+ *
+ */
+public class TestBCrypt {
 
 	public static void main(String[] args) {
 

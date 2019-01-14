@@ -1,6 +1,12 @@
 package com.ym.String;
 
-public class MyTestDemo {
+/**
+ * @des String API用法：
+ * eg:占位符s可以相连，，，如%ss 输出后就是 XXXs
+ * @author Administrator
+ *
+ */
+public class TestString {
 	
 	public static void main(String[] args) {
 		String dateStr = "201707081331";
@@ -14,6 +20,8 @@ public class MyTestDemo {
 		String a2 = "String";
 		System.out.println(a1.equals(a2));
 		System.out.println(a1 == a2);
+		
+		System.out.println(String.format("%ssetValue[%s]", "logPrefix" ,"hello~~~"));
 	}
 	
 }
