@@ -4,9 +4,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
+import com.google.gson.Gson;
 import com.ym.entity.Student;
 
 /**
@@ -15,6 +14,8 @@ import com.ym.entity.Student;
  *
  */
 public class TestDemo {
+	
+	static Gson gs = new Gson();
 	
 	public static void main(String[] args) throws ClassNotFoundException, IllegalArgumentException, IllegalAccessException {
 		
@@ -64,7 +65,8 @@ public class TestDemo {
 		for(Method method : methods){
 			String modifier = Modifier.toString(method.getModifiers());
 			String returnType = method.getReturnType().getName();
-			System.out.println("对应的成员方法名称："+method.getName()+",修饰符："+modifier+",返回类型："+returnType);
+			Class<?> [] cs =  method.getParameterTypes();
+			System.out.println("对应的成员方法名称："+method.getName()+",修饰符："+modifier+",返回类型："+returnType + ",parameterType.length: " + cs.length + ",parameterTypes: " + cs +",parameterType[0] :" + cs[0].getName());
 		}
 		System.out.println("---------------------------------");
 	}
