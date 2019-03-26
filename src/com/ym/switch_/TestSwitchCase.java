@@ -50,6 +50,8 @@ public class TestSwitchCase {
 		for(Fruit f : fruits){
 			executeSwitchCaseBlock(f);
 		}
+//		executeSwitchCaseBlock(null);
+		executeSwitchCaseBlock(Fruit.ORANGE);
 	}
 	
 }

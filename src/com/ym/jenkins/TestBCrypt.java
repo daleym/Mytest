@@ -3,8 +3,9 @@ package com.ym.jenkins;
 import org.mindrot.jbcrypt.BCrypt;
 
 /**
- * @des  jenkins密码加密 （BCrypt算法）
+ * @des  jenkins密码加密 （BCrypt算法）   
  * @author Administrator
+ * 密文：$2a$10$UMQIk0CRh6aZI9aJtOIUbOo2i0HCxfr7SiYyFcNJS1b6NZsWovaJa
  *
  */
 public class TestBCrypt {
