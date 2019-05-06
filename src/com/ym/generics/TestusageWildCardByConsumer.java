@@ -13,12 +13,12 @@ import com.ym.generics.entity.Orange;
  * 泛型：通配符的使用(限定通配符 和 非限定通配符)  -> ?  和   ? extends List 
  * eg：? super T ,作为T本身或T的父类即可
  * 
- * 类型擦除：在运行期，泛型类型参数会被Object或边界符（extends、super后面的类）取代
+ * !!!类型擦除!!!：在运行期，泛型类型参数会被Object或边界符（extends、super后面的类）取代
  * eg:No3示例中，类型擦除后，可以通过反射来实现添加元素到List中！
  * @author Administrator
  *
  */
-public class usageWildCardByConsumer {
+public class TestusageWildCardByConsumer {
 
 	static List<Apple> apples = new ArrayList<Apple>();
     static List<Fruit> fruit = new ArrayList<Fruit>();
