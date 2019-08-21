@@ -16,10 +16,13 @@ public class TestDemo {
 		
 	}
 	
-	public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException {
-		String content = "156}8{";
-		String reg = "^\\d*[\\{\\}]\\d*[\\{\\}]$";
-		ifContainSpecChar(content,reg);
+	public static void main(String[] args) throws Exception{
+//		String content = "156}8{";
+//		String reg = "^\\d*[\\{\\}]\\d*[\\{\\}]$";
+//		ifContainSpecChar(content,reg);
+		
+		Class<?> c = Class.forName("com.ym.reflect.Student");
+		System.out.println(c.newInstance());
 	}
 	
 }

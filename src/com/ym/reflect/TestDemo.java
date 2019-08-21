@@ -11,7 +11,9 @@ import com.ym.entity.Student;
 /**
  * 反射
  * @author ym
- *
+ * @usage 在控制台录入类的完整包路径，如：com.ym.reflect.TestDemo
+ * @description 输出父类名称、本类字段信息、本类方法信息
+ * 			         根据反射，取出示例对象的属性值 :getContent()
  */
 public class TestDemo {
 	
