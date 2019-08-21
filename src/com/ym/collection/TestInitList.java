@@ -37,7 +37,7 @@ public class TestInitList {
 	/**
 	 *No1
 	 */
-	private static void initByAnonymousInnerClass(){
+	public static List<String> initByAnonymousInnerClass(){
 		anonymousInnerClassists = new ArrayList<String>(){
 			{
 				add("anan~~~");
@@ -45,6 +45,7 @@ public class TestInitList {
 				add("anan~~~");
 			}
 		};
+		return anonymousInnerClassists;
 	}
 	
 	/**
