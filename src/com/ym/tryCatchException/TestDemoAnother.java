@@ -1,10 +1,10 @@
 package com.ym.tryCatchException;
 
 /**
- * @description Òì³£´¦Àí
- * 				ÈôÒì³£±»²¶»ñ£¬ÇÒ²»ÔÙ´ÎÅ×³öĞÂµÄÒì³££¬ÔòºóĞøÁ÷³Ì¹¦ÄÜ½«²»ÊÜÓ°Ïì
- * 				eg:Èô½ö´òÓ¡17ĞĞ´úÂë£¬Ôò22ĞĞ»á¼ÌĞøÖ´ĞĞ£»ÈôÅ×³öĞÂµÄÒì³££¬Èç18ĞĞ£¬Ôò22ĞĞ´úÂë²»»áµÃµ½Ö´ĞĞ£¡£¡£¡
- * @description Õ¼Î»·ûµÄÊ¹ÓÃ %% ×ªÒåÎª %
+ * @description å¼‚å¸¸å¤„ç†
+ * 				è‹¥å¼‚å¸¸è¢«æ•è·ï¼Œä¸”ä¸å†æ¬¡æŠ›å‡ºæ–°çš„å¼‚å¸¸ï¼Œåˆ™åç»­æµç¨‹åŠŸèƒ½å°†ä¸å—å½±å“
+ * 				eg:è‹¥ä»…æ‰“å°17è¡Œä»£ç ï¼Œåˆ™22è¡Œä¼šç»§ç»­æ‰§è¡Œï¼›è‹¥æŠ›å‡ºæ–°çš„å¼‚å¸¸ï¼Œå¦‚18è¡Œï¼Œåˆ™22è¡Œä»£ç ä¸ä¼šå¾—åˆ°æ‰§è¡Œï¼ï¼ï¼
+ * @description å ä½ç¬¦çš„ä½¿ç”¨ %% è½¬ä¹‰ä¸º %
  * @author ming.yang
  */
 public class TestDemoAnother {
@@ -13,21 +13,21 @@ public class TestDemoAnother {
 		try{
 			System.out.println(TestDemoAnother.class.getSimpleName());
 			
-			throw new Exception("¿ÕÖ¸Õë");
+			throw new Exception("ç©ºæŒ‡é’ˆ");
 		}catch(Exception e){
-			System.out.println(String.format("e.getMessage()¡¾%s¡¿", e.getMessage()));
+			System.out.println(String.format("e.getMessage()ã€%sã€‘", e.getMessage()));
 			e.printStackTrace();
-//			throw new Exception(String.format("·¢ÉúÒì³£À²£¬¾ßÌåÒì³£Îª£º¡¾%s¡¿", e.getMessage()));
+//			throw new Exception(String.format("å‘ç”Ÿå¼‚å¸¸å•¦ï¼Œå…·ä½“å¼‚å¸¸ä¸ºï¼šã€%sã€‘", e.getMessage()));
 		}finally{
-			System.out.println("Òì³£·¢ÉúÊ±£¬finally¿é »¹ÊÇÏÈÖ´ĞĞÁË...");
+			System.out.println("å¼‚å¸¸å‘ç”Ÿæ—¶ï¼Œfinallyå— è¿˜æ˜¯å…ˆæ‰§è¡Œäº†...");
 		}
-		String tmp = "¡¾test-½è¿î0002£¨µÈ¶î±¾Ï¢6¸öÔÂ9%£©-Îğ¶¯2¡¿µÚ¡¾4¡¿ÆÚ»Ø¿î½ğ¶î%sÔª¡¿";
+		String tmp = "ã€test-å€Ÿæ¬¾0002ï¼ˆç­‰é¢æœ¬æ¯6ä¸ªæœˆ9%ï¼‰-å‹¿åŠ¨2ã€‘ç¬¬ã€4ã€‘æœŸå›æ¬¾é‡‘é¢%så…ƒã€‘";
 		tmp        = tmp.replaceAll("%", "%%");
 		tmp       = tmp.replaceAll("%%s", "%s");
 		
 		System.out.println(String.format("tmp:%s" , tmp ));
 		System.out.println(String.format(tmp ,33586));
-		System.out.println(String.format("¡¾test-½è¿î0002£¨µÈ¶î±¾Ï¢6¸öÔÂ9%%£©-Îğ¶¯2¡¿µÚ¡¾4¡¿ÆÚ»Ø¿î½ğ¶î%sÔª¡¿" , 1000));
+		System.out.println(String.format("ã€test-å€Ÿæ¬¾0002ï¼ˆç­‰é¢æœ¬æ¯6ä¸ªæœˆ9%%ï¼‰-å‹¿åŠ¨2ã€‘ç¬¬ã€4ã€‘æœŸå›æ¬¾é‡‘é¢%så…ƒã€‘" , 1000));
 	}
 	
 }

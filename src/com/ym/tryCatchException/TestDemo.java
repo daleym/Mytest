@@ -1,8 +1,8 @@
 package com.ym.tryCatchException;
 
 /**
- * @description Òì³£¿é  finallyÖ´ĞĞË³Ğò
- * 				´òÓ¡×Ô¶¨ÒåÒì³£ĞÅÏ¢.eg:BaseException
+ * @description å¼‚å¸¸å—  finallyæ‰§è¡Œé¡ºåº
+ * 				æ‰“å°è‡ªå®šä¹‰å¼‚å¸¸ä¿¡æ¯.eg:BaseException
  * @author ming.yang
  */
 public class TestDemo {
@@ -11,12 +11,12 @@ public class TestDemo {
 		try{
 			System.out.println(TestDemo.class.getSimpleName());
 			
-			throw new BaseException( 110 , "¿ÕÖ¸Õë");
+			throw new BaseException( 110 , "ç©ºæŒ‡é’ˆ");
 		}catch(Exception e){
-			System.out.println(String.format("e.getMessage()¡¾%s¡¿,¾ßÌåÒì³£ĞÅÏ¢¡¾%s¡¿" , e.getMessage() , e));
+			System.out.println(String.format("e.getMessage()ã€%sã€‘,å…·ä½“å¼‚å¸¸ä¿¡æ¯ã€%sã€‘" , e.getMessage() , e));
 			return ;
 		}finally{
-			System.out.println("Òì³£·¢ÉúÊ±£¬finally¿é »¹ÊÇÏÈÖ´ĞĞÁË...");
+			System.out.println("å¼‚å¸¸å‘ç”Ÿæ—¶ï¼Œfinallyå— è¿˜æ˜¯å…ˆæ‰§è¡Œäº†...");
 		}
 	}
 	
